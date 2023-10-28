@@ -2,7 +2,7 @@ NAME = ASL-Live-Build
 .PHONY: buildpi build config configpi
 
 ifndef $(OS)
-OS = buster
+OS = bookworm
 endif
 
 reallyclean:

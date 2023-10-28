@@ -20,11 +20,10 @@ OPTIONS=()
 
 if [ "$DISTRO" == "bookworm" ] ; then
   \rm config/package-lists/non-bookworm.list.chroot 2>/dev/null
-  AZLUX_DISTRO=testing
 else
   \cp non-bookworm.list.chroot config/package-lists/
-  AZLUX_DISTRO=$DISTRO
 fi
+AZLUX_DISTRO=$DISTRO
 
 if [[ " ${@} " =~ " build_rpi " ]]; then
   OPTIONS+=(

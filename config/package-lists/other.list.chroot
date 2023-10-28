@@ -24,7 +24,6 @@ lua5.1
 luajit
 libsndfile1-dev
 sox
-hardlink
 ca-certificates
 curl
 nfs-common
@@ -53,3 +52,6 @@ locate
 msmtp
 unattended-upgrades
 apt-listchanges
+util-linux
+util-linux-extra
+parted

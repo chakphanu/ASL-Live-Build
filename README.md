@@ -10,7 +10,7 @@ You must install Debian Live before you can build.
 
 <pre>
 sudo apt-get install qemu-user-static qemu-utils qemu-system-arm
-sudo apt-get install live-build debootstrap apt-cacher-ng
+sudo apt-get install build-essential live-build debootstrap apt-cacher-ng curl parted dosfstools zip xxd
 </pre>
 
 Consult this installation guide if you have other issues:
@@ -28,6 +28,10 @@ For Raspberry Pi 2, 3, 4 image
 make pi
 </pre>
 
+For Raspberry Pi4 must run in 32Bit mode(dahdi driver), add this to /boot/config.txt and reboot.
+<pre>
+arm_64bit=0
+</pre>
 ## Contributors
 Adam KC1KCC
 
